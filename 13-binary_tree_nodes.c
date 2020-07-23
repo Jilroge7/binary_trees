@@ -1,9 +1,9 @@
 #include "binary_trees.h"
 /**
-* binary_tree_leaves - function
-* @tree: tree to count leaves
-* Description: count number of leaves in binary tree
-* Return: number of leaves or 0 if tree is empty
+* binary_tree_nodes - function
+* @tree: tree to count nodes
+* Description: count number of nodes in binary tree
+* Return: number of nodes or 0 if tree is empty
 */
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {

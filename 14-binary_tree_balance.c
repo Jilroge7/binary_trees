@@ -1,9 +1,9 @@
 #include "binary_trees.h"
 /**
-* binary_tree_leaves - function
-* @tree: tree to count leaves
-* Description: count number of leaves in binary tree
-* Return: number of leaves or 0 if tree is empty
+* binary_tree_balance - function
+* @tree: tree to calculate balance of
+* Description: calc balance of a binary tree
+* Return: balance value, 0 if tree is balanced
 */
 int binary_tree_balance(const binary_tree_t *tree)
 {
@@ -22,7 +22,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 }
 
 /**
-* recursive_height - function
+* balance - function
 * @tree: ptr to root of tree to traverse through
 * @counter: variable to store traverseal steps
 * @max: variable to store recursive_height
