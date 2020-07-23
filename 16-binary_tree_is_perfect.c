@@ -14,7 +14,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	height = recursive_height(tree, 0, 0);
 
-	if (height * height == binary_tree_leaves(tree))
+	if ((size_t)1 << height == binary_tree_leaves(tree))
 		return (1);
 
 	return (0);
