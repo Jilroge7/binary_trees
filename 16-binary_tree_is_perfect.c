@@ -12,13 +12,16 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
+	if (tree->left == NULL && tree->right == NULL)
+		return (0);
+
 	if (tree->left != NULL)
 		counterL = balance(tree->left, 1, 1);
 
 	if (tree->right != NULL)
 		counterR = balance(tree->right, 1, 1);
 
-	if (counterL - counterR == 0)
+	if (counterL - counterR == 0 && binary_tree_is_full(tree))
 		return (1);
 	else
 		return (0);
