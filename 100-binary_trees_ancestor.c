@@ -6,7 +6,8 @@
 * Description: find lowest common ancestor for two nodes
 * Return: ptr to the ancestor or NULL if fail
 */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+	const binary_tree_t *second)
 {
 	size_t depthFirst, depthSecond;
 

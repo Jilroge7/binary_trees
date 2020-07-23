@@ -3,7 +3,7 @@
 * binary_tree_levelorder - function
 * @tree: ptr to root node of tree to traverse
 * @func:ptr to a func to call each node
-* Description: traverse through a binary tree using levelorder 
+* Description: traverse through a binary tree using levelorder
 * Return: nothing
 */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
